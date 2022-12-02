@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav__container {
+  height: 70px;
+  width: 100%;
+  padding: 0 32px;
+  border-bottom: 2px solid rgb(224, 224, 224);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo__nav {
+  display: flex;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav__btn {
   display: flex;
   flex-direction: column;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 24px;
+}
+
+.bar {
+  height: 3px;
+  width: 24px;
+  margin: 2px 0;
+  border-radius: 2px;
+  background-color: rgb(124, 124, 229);
+}
+
+.skeleton-wrapper {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.skeleton1 {
+  background-color: rgb(201, 201, 201);
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.skeleton2 {
+  background-color: rgb(201, 201, 201);
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  margin-left: 8px;
+}
+
+.btn {
+  height: 40px;
+  padding: 8px 16px;
+  margin-left: 14px;
+  background-color: rgb(124, 124, 229);
   color: white;
+  border-radius: 5px;
+  border: none;
+  transition: all 300ms ease;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  background-color: rgb(80, 80, 152);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn__login {
+  background-color: rgb(205, 205, 205);
+  transition: all 300ms ease;
+  color: black;
+}
+
+.btn__login:hover {
+  background-color: rgb(167, 167, 167) !important;
+}
+
+.logout {
+  height: 50px;
+  width: 50px;
+  font-size: 26px;
+  color: white;
+  border-radius: 100%;
+  background-color: rgb(124, 124, 229);
+  border: none;
 }
